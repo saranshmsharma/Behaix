@@ -7,10 +7,10 @@
   "type": "module",
   "packageManager": "pnpm@10.0.0",
   "engines": {
-    "node": ">=20",
-    "pnpm": ">=10"
+    "node": ">=20"
   },
   "scripts": {
+    "preinstall": "corepack enable && corepack prepare pnpm@10.0.0 --activate",
     "build": "pnpm -r build",
     "changeset": "changeset",
     "dev": "pnpm storybook",
