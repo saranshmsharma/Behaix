@@ -4,14 +4,14 @@
   "description": "Premium, AI-forward React component library — enterprise-ready, fully themable, open source.",
   "author": "Saransh Sharma <saransh@behaix.com> (https://sransh.com)",
   "license": "MIT",
-  "homepage": "https://github.com/saranshsharma/behaix#readme",
+  "homepage": "https://github.com/saranshmsharma/behaix#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saranshsharma/behaix.git",
+    "url": "git+https://github.com/saranshmsharma/behaix.git",
     "directory": "packages/components"
   },
   "bugs": {
-    "url": "https://github.com/saranshsharma/behaix/issues"
+    "url": "https://github.com/saranshmsharma/behaix/issues"
   },
   "keywords": [
     "design-system",
