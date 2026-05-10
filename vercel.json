@@ -2,8 +2,11 @@
   "version": 2,
   "framework": "storybook",
   "buildCommand": "pnpm build",
-  "installCommand": "corepack enable && corepack prepare pnpm@10.0.0 --activate && pnpm install --no-frozen-lockfile",
+  "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": "packages/docs/storybook-static",
+  "env": {
+    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+  },
   "cleanUrls": true,
   "headers": [
     {
