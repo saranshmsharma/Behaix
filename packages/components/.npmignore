@@ -1,0 +1,15 @@
+# Components publish ignore
+node_modules
+src
+**/*.test.ts
+**/*.test.tsx
+**/*.stories.tsx
+**/*.stories.ts
+**/*.stories.mdx
+**/*.spec.ts
+**/*.spec.tsx
+tsconfig.json
+tsconfig.build.json
+vite.config.ts
+vitest.config.ts
+.DS_Store

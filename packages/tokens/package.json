@@ -1,0 +1,53 @@
+{
+  "name": "@behaix/tokens",
+  "version": "2.0.0",
+  "description": "Design tokens for the Behaix design system — CSS custom properties, JSON, and TypeScript constants.",
+  "author": "Saransh Sharma <saransh@behaix.com> (https://sransh.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/saranshsharma/behaix#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saranshsharma/behaix.git",
+    "directory": "packages/tokens"
+  },
+  "bugs": {
+    "url": "https://github.com/saranshsharma/behaix/issues"
+  },
+  "keywords": [
+    "design-tokens",
+    "css-variables",
+    "theming",
+    "tailwind",
+    "design-system",
+    "behaix"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "sideEffects": [
+    "./dist/tokens.css"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./tokens.css": "./dist/tokens.css",
+    "./tokens.json": "./dist/tokens.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && cp src/tokens.css dist/tokens.css && cp src/tokens.json dist/tokens.json",
+    "prepublishOnly": "pnpm build",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

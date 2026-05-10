@@ -1,0 +1,6 @@
+# Tokens publish ignore
+node_modules
+src
+tsconfig.json
+tsconfig.build.json
+.DS_Store

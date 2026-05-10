@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "include": [".storybook", "src"],
+  "references": [
+    { "path": "../tokens" },
+    { "path": "../components" }
+  ]
+}
