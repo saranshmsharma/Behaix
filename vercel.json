@@ -5,7 +5,7 @@
   "installCommand": "pnpm install --no-frozen-lockfile",
   "outputDirectory": "packages/docs/storybook-static",
   "env": {
-    "COREPACK_ENABLE_DOWNLOAD_PROMPT": "0"
+    "npm_config_registry": "https://registry.npmjs.org"
   },
   "cleanUrls": true,
   "headers": [
