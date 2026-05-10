@@ -6,6 +6,10 @@
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  },
   "scripts": {
     "build": "pnpm -r build",
     "changeset": "changeset",
@@ -164,10 +168,10 @@
     "prelude-ls": "^1.2.1",
     "pretty-format": "^27.5.1",
     "punycode": "^2.3.1",
-    "react": "^19.2.6",
+    "react": "^18.3.1",
     "react-docgen": "^8.0.3",
     "react-docgen-typescript": "^2.4.0",
-    "react-dom": "^19.2.6",
+    "react-dom": "^18.3.1",
     "react-is": "^17.0.2",
     "recast": "^0.23.11",
     "redent": "^3.0.0",

@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "buildCommand": "pnpm build",
-  "outputDirectory": "packages/docs/storybook-static",
   "framework": "storybook",
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "outputDirectory": "packages/docs/storybook-static",
   "cleanUrls": true,
   "headers": [
     {
