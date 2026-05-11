@@ -3,16 +3,26 @@
   "buildCommand": "",
   "installCommand": "",
   "outputDirectory": "packages/docs/storybook-static",
-  "cleanUrls": true,
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
+      "source": "/sb-manager/(.*)",
+      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
+    },
+    {
+      "source": "/sb-addons/(.*)",
+      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
+    },
+    {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
+      "headers": [{ "key": "Access-Control-Allow-Origin", "value": "*" }]
     }
   ]
 }
